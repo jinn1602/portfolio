@@ -260,11 +260,17 @@ $(document).ready(function(){
   });
   $("#contents2").click(function(){
     $(".popup2").fadeIn()
-});
+  });
+  $("#contents3").click(function(){
+    $(".popup3").fadeIn()
+  });
   $(".exit1").click(function(){
       $(".popup1").fadeOut();
   });
   $(".exit2").click(function(){
     $(".popup2").fadeOut();
+  });
+  $(".exit3").click(function(){
+    $(".popup3").fadeOut();
   });
 });
