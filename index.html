@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:image" content="./images/myPic.png">
+    <meta property="og:image" content="./images/myPic1.jpg">
     <meta property="og:description" content="안녕하세요! 웹 퍼블리셔라는 꿈을 코딩중인 정원진입니다! :)">
     <title>T1ue's Portfolio</title>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -20,13 +20,16 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="./js/main.js"></script>
+    <!-- Swiper -->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
 </head>
 
 <body>
     <div>
         <!-- 메인 헤더 -->
         <div id="header-fix">
-            <header id="main_header" id="main_visual">
+            <header id="main_header">
                 <div class="header_box">
                     <h1>
                         <a href="index.html">
@@ -43,81 +46,83 @@
                         </div>
                     </nav>
                 </div>
+
             </header>
         </div>
         <!-- 메인 비주얼 -->
         <div class="section" id="home">
-            <img src="./images/desk2.jpg" alt="모니터">
+            <img src="./images/desk2.jpg" alt="메인 이미지">
 
-                <div class="text-center">
-                    <div class="typing-txt">
-                        <p class="result1"></p>
-                        <br>
-                        <p class="result2"></p>
-                        <br>
-                        <p class="result3"></p>
-                    </div>
+            <div class="text-center">
+                <div class="typing-txt">
+                    <p class="result1"></p>
+                    <br>
+                    <p class="result2"></p>
+                    <br>
+                    <p class="result3"></p>
                 </div>
-        </div>
-        <div class="section" id="home1">
-            <img src="./images/phone-pre.jpg" height="100px" alt="핸드폰">
+            </div>
 
-                <div class="text-center">
-                    <div class="typing-txt">
-                        <p class="result1"></p>
-                        <br>
-                        <p class="result2"></p>
-                        <br>
-                        <p class="result3"></p>
-                    </div>
-                </div>
         </div>
 
         <!-- About -->
         <div class="section" id="sub1_1">
             <div class="text_box">
                 <h2>About me</h2>
-                <img src="./images/brush1.png" alt="" class="brush">
+                <img src="./images/brush1.png" alt="브러쉬" class="brush">
             </div>
             <div class="products_box">
-                <div class="myPic" data-aos="zoom-out-up" data-aos-duration="1500">
-                    <img src="./images/myPic1.png" alt="프로필사진">
+                <div class="myPic products_box_left" data-aos="zoom-out-up" data-aos-duration="1500">
+                    <img src="./images/myPic1.png" alt="내 사진">
                 </div>
-                <section class="profile" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100" data-aos-easing="ease-in-sine">
-                    <h3>Profile</h3>
-                    <p>정원진 <br>
-                        Jeong Won Jin <br>
-                        1993.02.16</p>
-                </section>
-                <section class="history" data-aos="fade-up" data-aos-duration="800" data-aos-delay="250" data-aos-easing="ease-in-sine">
-                    <h3>History</h3>
-                    <p>2011.03 ~ 2013.02 서울현대전문학교 세무회계학과 전공 <br>
-                        2013.09 ~ 2019.01 육군 26사단, 8사단 부사관 <br>
-                        2020.06 ~ 2020.11 더조은아카데미 'UI/UX 엔지니어링'과정 수료</p>
-                </section>
-                <section class="skill" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400" data-aos-easing="ease-in-sine">
-                    <h3>Skill</h3>
-                    <div class="skill_box">
-                        <div>
-                            <img src="./images/html5.png" alt="html5">
+                <div class="products_box_right">
+                    <section class="profile" data-aos="fade-up" data-aos-duration="1500" data-aos-easing="ease-in-sine">
+                        <h3>Profile</h3>
+                        <p>정원진 <br>
+                            Jeong Won Jin <br>
+                            서울시 구로구 <br>
+                            1993.02.16</p>
+                    </section>
+                    <section class="history" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100"
+                        data-aos-easing="ease-in-sine">
+                        <h3>History</h3>
+                        <div class="ht-txt">
+                            <p>2011.03 ~ 2013.02 서울현대전문학교 세무회계학과 전공 <br>
+                                2013.09 ~ 2019.01 육군 26사단, 8사단 부사관 <br>
+                                2020.06 ~ 2020.11 더조은아카데미 'UI/UX 엔지니어링'과정 수료 <br>
+                            </p>
                         </div>
-                        <div>
-                            <img src="./images/css.png" alt="css3">
+                    </section>
+                    <section class="skill" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200"
+                        data-aos-easing="ease-in-sine">
+                        <h3>Skill</h3>
+                        <div class="">
+                            <div class="skill_box">
+                                <div class="">
+                                    <img src="./images/html5.png" alt="html5">
+                                </div>
+                                <div class="">
+                                    <img src="./images/css.png" alt="css3">
+                                </div>
+                                <div class="">
+                                    <img src="./images/js.png" alt="javascript">
+                                </div>
+                                <div class="react-img">
+                                    <img src="./images/react.png" alt="react">
+                                </div>
+                                <div class="adobe">
+                                    <img src="./images/ps-icon1.png" alt="Photoshop">
+                                </div>
+                                <div class="adobe">
+                                    <img src="./images/ai-icon1.png" alt="illustrator">
+                                </div>
+                                <div class="adobe">
+                                    <img src="./images/xd-icon.png" alt="adobe xd">
+                                </div>
+                            </div>
                         </div>
-                        <div>
-                            <img src="./images/js.png" alt="javascript">
-                        </div>
-                        <div class="adobe">
-                            <img src="./images/ps-icon1.png" alt="Photoshop">
-                        </div>
-                        <div class="adobe">
-                            <img src="./images/ai-icon1.png" alt="illustrator">
-                        </div>
-                        <div class="adobe">
-                            <img src="./images/xd-icon.png" alt="adobe xd">
-                        </div>
-                    </div>
-                </section>
+                    </section>
+                </div>
             </div>
         </div>
 
@@ -128,133 +133,46 @@
                 <img src="./images/brush1.png" alt="" class="brush">
             </div>
             <div class="pf-align">
-                <div id="contents1" class="pf_box1">
-                    <img src="./images/port1111.jpg" alt="대신자산운용 포트폴리오" class="image-card">
-                    <p>대신자산운용 <br>홈페이지 리뉴얼 포트폴리오</p>
-                </div>
-                <div id="contents2" class="pf_box2">
-                    <img src="./images/port2222.jpg" alt="커피나무 포트폴리오" class="image-card">
-                    <p>커피나무 <br>홈페이지 리뉴얼 포트폴리오</p>
-                </div>
-                <div id="contents3" class="pf_box3">
-                    <img src="./images/phone_port.jpg" alt="모바일 청첩장 포트폴리오" class="image-card">
-                    <p>모바일 청첩장</p>
-                </div>
+                <a href="https://jiopwls.github.io/DAISIN_ASSET_MANAGEMENT/" target=‘_blank>
+                    <div id="contents1" class="pf_box1">
+                        <img src="./images/port11111.jpg" alt="대신자산운용 포트폴리오" class="image-card">
+                        <p>대신자산운용 <br>홈페이지 리뉴얼</p>
+                    </div>
+                </a>
+                <a href="https://jinn1602.github.io/coffeeNamu/" target="_blank">
+                    <div id="contents2" class="pf_box2">
+                        <img src="./images/port22222.jpg" alt="커피나무 포트폴리오" class="image-card">
+                        <p>커피나무 <br>홈페이지 리뉴얼</p>
+                    </div>
+                </a>
+                <a href="https://jinn1602.github.io/weltree/" target="_blank">
+                    <div id="contents5" class="pf_box3">
+                        <img src="./images/port33333.jpg" alt="웰트리 포트폴리오" class="image-card">
+                        <p>웰트리 <br>홈페이지 리뉴얼</p>
+                    </div>
+                </a>
+                <a href="https://jiopwls.github.io/invitation_preview/" target=‘_blank>
+                    <div id="contents3" class="pf_box1_2nd">
+                        <img src="./images/phone_port1.jpg" alt="모바일 청첩장 포트폴리오" class="image-card">
+                        <p>모바일 청첩장</p>
+                    </div>
+                </a>
                 <div id="contents4" class="pf_box_last">
                     <span>포트폴리오는<br>계속 추가할 예정입니다..!</span>
-                    
+
                 </div>
             </div>
         </div>
         <!--팝업 내용-->
-        <div class="popup1">
-            <div class="popmenu" id="menu_1st">
-                <div class="pop_scroll">
-                    <div class="popup_bg" id="pop_1st">
-                        <div class="menu_1st_bg">
-                            <a href="https://jiopwls.github.io/DAISIN_ASSET_MANAGEMEN" target=‘_blank><img src="./images/monitor.png" alt="대신자산운용">
-                            </a>
-                            <p class="new_site">🖱 클릭하시면 사이트로 이동합니다.</p>
-                            <div class="popup_title">
-                                <h2>대신자산운용
-                                    <a href="https://jiopwls.github.io/DAISIN_ASSET_MANAGEMENT" target=‘_blank>
-                                        <p>리뉴얼 사이트 : https://jiopwls.github.io/DAISIN_ASSET_MANAGEMENT</p>
-                                    </a>
-                                </h2>
-                                <p class="now_site">
-                                    현 사이트 주소 : <a href="http://asset.daishin.com/" target=‘_blank>대신자산운용<span>(http://asset.daishin.com/)</span></a>
-                                </p>
-                            </div>
-                            <div class="popup_overview">
-                                <h3>OVERVIEW</h3>
-                                <p>1962년 삼락증권으로 설립해 1975년 대신증권주식회사로 상호변경 하였으며 1975년 국내증권업계 최초로 증권업무 전산화 실시했고, 1980년
-                                    국내증권업계 최초로전
-                                    지점에 온라인 거래를 실시, 1984년 업계 최초로 일본 도쿄에 지사를 세운 금융투자업의 대기업중 하나인 대신증권이 1988년 100% 출자한 전문
-                                    자산운용회사입니다.</p>
-                            </div>
-                            <div class="popup_about">
-                                <h3>ABOUT</h3>
-                                <p><span>작업기간</span>약 5일</p>
-                                <p><span>작업인원</span>4명</p>
-                                <p><span>참여도</span> 40%</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="exit1 brackets"><a>닫기</a></div>
-                </div>
-            </div>
-        </div>
-        <div class="popup2">
-            <div class="popmenu" id="menu_2st">
-                <div class="pop_scroll">
-                    <div class="popup_bg" id="pop_2st">
-                        <div class="menu_2st_bg">
-                            <a href="https://ddirim.github.io/Coffee-Namu/" target=‘_blank><img src="./images/monitor2.png" alt="커피나무">
-                            </a>
-                            <p class="new_site">🖱 클릭하시면 사이트로 이동합니다.</p>
-                            <div class="popup_title">
-                                <h2>커피나무
-                                    <a href="https://ddirim.github.io/Coffee-Namu/" target=‘_blank>
-                                        <p>리뉴얼 사이트 : https://ddirim.github.io/Coffee-Namu/</p>
-                                    </a>
-                                </h2>
-                                <p class="now_site">
-                                    현 사이트 주소 : <a href="https://coffeenamu.co.kr/" target=‘_blank>커피나무<span>(https://coffeenamu.co.kr/)</span></a>
-                                </p>
-                            </div>
-                            <div class="popup_overview">
-                                <h3>OVERVIEW</h3>
-                                <p>카페 브랜드 중 하나인 커피나무를 리뉴얼 하였으며 현재 서울, 경기<br> 약 60개소의 가맹점을 운영하고 있습니다.</p>
-                            </div>
-                            <div class="popup_about">
-                                <h3>ABOUT</h3>
-                                <p><span>작업기간</span>약 5일</p>
-                                <p><span>작업인원</span>4명</p>
-                                <p><span>참여도</span>50%</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="exit2 brackets"><a>닫기</a></div>
-                </div>
-            </div>
-        </div>
-        <div class="popup3">
-            <div class="popmenu" id="menu_3st">
-                <div class="pop_scroll">
-                    <div class="popup_bg" id="pop_3st">
-                        <div class="menu_3st_bg">
-                            <a href="https://jiopwls.github.io/invitation_preview/" target=‘_blank><img src="./images/phone.png" alt="모바일 청첩장">
-                            </a>
-                            <p class="new_site">🖱 클릭하시면 사이트로 이동합니다.</p>
-                            <div class="popup_title">
-                                <h2>모바일 청첩장
-                                    <a href="https://jiopwls.github.io/invitation_preview/" target=‘_blank>
-                                        <p>https://jiopwls.github.io/invitation_preview/</p>
-                                    </a>
-                                </h2>
-                            </div>
-                            <div class="popup_overview">
-                                <h3>OVERVIEW</h3>
-                                <p>프로젝트 과제중 하나인 모바일 청첩장이며, 모바일 표준에 맞춰 제작하였습니다.</p>
-                            </div>
-                            <div class="popup_about">
-                                <h3>ABOUT</h3>
-                                <p><span>작업기간</span>약 3일</p>
-                                <p><span>작업인원</span>1명</p>
-                                <p><span>참여도</span>100%</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="exit3 brackets"><a>닫기</a></div>
-                </div>
-            </div>
-        </div>
+
         <!--contact-->
         <div class="sub1_3bg">
             <div class="section" id="sub1_3">
                 <div class="text_box">
                     <h2>Contact</h2>
-                    <img src="./images/brush1.png" alt="" class="brush">
+                    <div id="brush">
+                        <img src="./images/brush1.png" alt="브러쉬" class="brush">
+                    </div>
                 </div>
                 <div class="icon_box">
                     <div>
@@ -268,7 +186,7 @@
                         </a>
                     </div>
                     <div>
-                        <a href="https://open.kakao.com/me/t1ue" target=‘_blank’><img
+                        <a href="http://qr.kakao.com/talk/HVXPkNC0tC1AfEscTtYjOw4BVDY-"><img
                                 src="images/icon_kakao1.png" alt="카카오톡">
                             <p>finapil</p>
                         </a>
@@ -280,6 +198,26 @@
                         </a>
                     </div>
                 </div>
+                <!-- 댓글 -->
+                <!-- <div id="lv-container" data-id="city" data-uid="MTAyMC81MjAxNi8yODQ5Nw==">
+                    <script type="text/javascript">
+                        window.livereOptions = {
+                            refer: '(jiopwls.github.io/t1ue_page/'
+                        };
+                        (function (d, s) {
+                            var j, e = d.getElementsByTagName(s)[0];
+
+                            if (typeof LivereTower === 'function') { return; }
+
+                            j = d.createElement(s);
+                            j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+                            j.async = true;
+
+                            e.parentNode.insertBefore(j, e);
+                        })(document, 'script');
+                    </script>
+                    <noscript>라이브리 댓글 작성을 위해 JavaScript를 활성화 해주세요</noscript>
+                </div> -->
             </div>
             <div id="footer">
                 <h1>
@@ -288,15 +226,26 @@
                     </a>
                 </h1>
                 <div class="footer_info">
-                    <p>
-                        본 사이트는 상업적 목적이 아닌 개인 포트폴리오 사이트로 제작하였습니다.</p>
+                    <!--<p>
+                        본 사이트는 상업적 목적이 아닌 개인 포트폴리오 사이트로 제작하였습니다.</p>-->
                 </div>
             </div>
         </div>
         <!-- footer -->
         <footer>
+
         </footer>
     </div>
-    <script> AOS.init(); </script>
+    <script> AOS.init();
+        var swiper = new Swiper('.swiper-container', {
+            autoplay: true,
+            loop: true,
+            loopAdditionalSlides: 1,
+            slidesPerView: 1,
+            spaceBetween: 17,
+
+        });
+    </script>
 </body>
+
 </html>

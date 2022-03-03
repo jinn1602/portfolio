@@ -1,0 +1,244 @@
+/* style.css */
+* {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+scroll-behavior: smooth;
+}
+ul { list-style-type: none;}
+a { 
+  text-decoration: none;
+  color: #000;
+}
+
+/*header*/
+#main_header {
+  min-width: 1400px;
+  width: 100%; height: 150px;
+  position: relative;
+  margin: 0 auto;
+  background: #ccc;
+}
+.header_box {
+  width: 1400px;
+  outline: 1px solid red;
+}
+.header_box h1 {
+  position: absolute;
+  outline: 1px solid blue;
+  top: 50%;
+  transform: translateY(-50%);
+}
+#gnb {
+  /* outline: 2px solid red;/ */
+  font-size: 20px;
+  position: absolute;
+  top: 50px; left: 50%;
+  transform: translateX(-50%);
+  box-sizing: border-box;
+  z-index: 9999;
+}
+#gnb .depth1 {
+  box-sizing: border-box;
+  overflow: hidden;
+  /* outline: 1px solid red; */
+  margin: 0 auto;
+  
+}
+#gnb .depth1 > li {
+  float: left;
+  text-align: center;
+  /* outline: 1px solid red; */
+}
+.main_text{
+  width: 100%;
+  margin: 0 auto;
+}
+.main_text_box {
+  width: 1400px;
+  outline: 1px solid purple;
+}
+
+/*about me*/
+#sub1_1 {
+  width: 1400px;
+  margin: 0 auto;
+  outline: 1px solid red;
+  position: relative;
+}
+#sub1_1 .text_box{
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 150px;
+}
+.myPic img{
+  float: left;
+  margin-right: 145px;
+}
+.profile {
+  float: left;
+  margin-bottom: 50px;
+}
+.profile h3{
+  float: left;
+  margin-right: 77px;
+  height: 50px;
+}
+.profile p{
+  outline: 1px solid red;
+  width: 250px;
+}
+.history {
+  outline: 1px solid blue;
+  margin-top: 100px;
+  float: left;
+  width: 650px;
+}
+.history h3{
+  float: left;
+  margin-right: 77px;
+  height: 50px;
+}
+.history p{
+  outline: 1px solid red;
+  width: 560px;
+}
+/*skill*/
+.skill{
+  width: 700px;
+  outline: 1px solid blue;
+  float: left;
+  margin-top: 100px;
+}
+.skill h3{margin-bottom: 30px;
+}
+.skill p{text-align: center;}
+/* chart*/
+.pie-chart {
+  position: relative;
+  display:inline-block;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  transition: 0.3s;
+  margin-right: 20px;
+  outline: 1px solid red;
+}
+.pie-chart:last-child{margin-right: 0px;}
+span.center{
+  background: #fff;
+  display : block;
+  position: absolute;
+  top:50%; left:50%;
+  width:100px; height:100px;
+  border-radius: 50%;
+  text-align:center; line-height: 100px;
+  font-size:30px;
+   transform: translate(-50%, -50%);
+}
+.skill div{
+  float: left;
+}
+/*portfolio*/
+#sub1_2 {
+  width: 1400px;
+  outline: 1px solid green;
+  clear: both;
+  text-align: center;
+}
+#sub1_2 p{
+  margin-top: 50px;
+}
+.pf_box1 {
+  width: 540px; height: 560px;
+  outline: 1px solid red;
+  float: left;
+  margin: 0 80px 0 80px;
+}
+.pf_box1 img {
+  width: 540px; height: 450px;
+}
+.pf_box2 {
+  width: 540px; height: 560px;
+  outline: 1px solid red;
+  float: left;
+  margin: 0 80px 0 80px;
+}
+.pf_box2 img {
+  width: 540px; height: 450px;
+}
+
+/*팝업창*/
+.popup {
+  /*display: none;*/
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  /* background: rgba(0,0,0,0.9); */
+  left: 0; top: 0;
+  padding: 80px 20px 20px 20px;
+}
+
+.popmenu {
+  position: relative;
+  margin: 0 auto;
+  padding: 80px 0 50px 50px;
+  width: 100px;
+  max-width: 1400px;
+  height: 100%;
+  border-radius: 10px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  /* width: 300px;
+  height: 200px; */
+  text-align: center;
+  background: #fff;
+}
+.pop_scroll {
+  padding-right: 50px;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+.popup_bg:first-child{
+  background-image: url(../images/pop1.png);
+}
+.popmenu p {
+  margin-top: 80px;
+}
+
+.exit {
+  position: absolute;
+  left: 50%;
+  bottom: 10px;
+  transform: translate(-50%,0);
+  width: 60px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  background: #007AAE;
+  cursor: pointer;
+}
+#contents {
+  width: 100%;
+  text-align: center;
+  line-height: 150px;
+  color: #fff;
+  background: #555;
+  cursor: pointer;
+}
+#sub1_3{
+  width: 1400px;
+  outline: 1px solid green;
+  clear: both;
+}
+#sub1_3 h2{text-align: center;}
+.icon_box div{
+  float: left;
+  outline: 1px solid red;
+}
+.icon_box div a img{width: 60px; height: 60px;}
+.icon_box div a p {float: left;}
