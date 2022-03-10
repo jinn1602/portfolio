@@ -107,7 +107,7 @@ String.prototype.toKorChars = function() {
 
 //타이핑할 문장
 var result1 = "안녕하세요!";
-var result2 = "웹 퍼블리셔라는 꿈을 코딩중인";
+var result2 = "프론트엔드라는 꿈을 코딩중인";
 var result3 = "정원진입니다! :)";
 var typeing1=[],
     typeing2=[],
